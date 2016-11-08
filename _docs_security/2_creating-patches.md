@@ -8,4 +8,4 @@ Before releasing it, we verify the patch, backport it to older versions, and tes
 The patches are a part of [Snyk’s open source vulnerability database](https://github.com/Snyk/vulndb/), so you can check them out before applying them. For example, the patches for the [ms ReDoS vulnerability](https://github.com/Snyk/vulndb/tree/master/data/npm/ms/20151024).
 We don’t have patches for every case - if you need one that’s missing, <a href="mailto:contact@snyk.io">let us know</a>. We also [accept pull requests](https://github.com/Snyk/vulndb/blob/master/CONTRIBUTING.md)!
 
-Currently, patches are only available for Javascript packages and are unavailable for Ruby vulnerabilities.
+Currently are unavailable for Ruby projects.
