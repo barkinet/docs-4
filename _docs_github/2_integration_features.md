@@ -2,7 +2,7 @@
 title: Integration features
 ---
 
-Watch a GitHub repo to add it as a project to Snyk. This will allow you to:
+Watch a Node.js or Ruby GitHub repo to add it as a project to Snyk. This will allow you to:
 
 * see Snyk tests in your pull request that check for vulnerabilities
 * get email alerts and a Snyk pull request with fixes when new vulnerabilities that affect your repo are disclosed
