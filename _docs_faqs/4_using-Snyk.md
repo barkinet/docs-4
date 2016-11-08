@@ -20,13 +20,13 @@ For example, to configure this as a one time value, you can run:
 
 ### Why does Snyk install itself into my production dependencies?
 
-After running `snyk wizard`, if you choose to protect upon installation of your package, Snyk will need to be bundled as a production dependency.
+After running `snyk wizard` with Snyk's CLI, if you choose to protect upon installation of your package, Snyk will need to be bundled as a production dependency.
 
 However, if you select to *only* test your page (and not protect), Snyk will install itself as a development dependency.
 
 ### How can I test a Github repository from the command-line interface tool (CLI)?
 
-Currently, we support testing public Github repositories only.
+Currently, our CLI supports testing public Node.js Github repositories only.
 To test a public Github repository, run snyk test and include the Github URL to the repo.
 
 ```zsh
@@ -40,7 +40,7 @@ The following git URL formats are supported:
 * user/project#commit-ish
 
 This also works for Bitbucket and GitLab.
-You can also test a public npm package or Github project via the [Test page on snyk.io](https://snyk.io/test/).
+You can also test a public npm package, or public Node.js or Ruby Github project via the [Test page on snyk.io](https://snyk.io/test/).
 
 ### How can I delete my data?
 
