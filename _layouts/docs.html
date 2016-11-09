@@ -10,6 +10,8 @@
 
     <div class="docs
     {% if page.section == "faqs" %}docs--faqs{% endif %}
+    {% if page.section == "ruby" %}docs--ruby{% endif %}
+    {% if page.section == "nodejs" %}docs--nodejs{% endif %}
     {% if page.section == "quick-start" %}docs--quick-start{% endif %}
     {% if page.section == "using-snyk" %}docs--using-snyk{% endif %}
     {% if page.section == "broker" %}docs--broker{% endif %}
@@ -31,6 +33,26 @@
           </ul>
           {% endif %}
         </li>-->
+        <li class="nav-tree__item nav--docs__item nav--docs__nodejs">
+          <a href="/docs/nodejs/" class="nav-tree__item__link">Snyk for Node.js</a>
+          {% if page.section == "nodejs" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_nodejs %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/nodejs/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        <li class="nav-tree__item nav--docs__item nav--docs__ruby">
+          <a href="/docs/ruby/" class="nav-tree__item__link">Snyk for Ruby</a>
+          {% if page.section == "ruby" %}
+          <ul class="nav-tree__branch">{% for article in site.docs_ruby %}{% if article.title == "" %}{% else %}
+            <li class="nav-tree__item {% if article.draft %}status--draft{% endif %}">
+              <a href="/docs/ruby/#{{article.title | slugify}}" class="nav-tree__item__link">{{article.title}}</a>
+            </li>{% endif %}{% endfor %}
+          </ul>
+          {% endif %}
+        </li>
         <li class="nav-tree__item nav--docs__item nav--docs__orgs">
           <a href="/docs/orgs/" class="nav-tree__item__link">Organisations</a>
           {% if page.section == "orgs" %}
@@ -137,6 +159,24 @@
 
       {% if page.section == "quick-start" %}
       {% for article in site.docs_quick-start %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "nodejs" %}
+      {% for article in site.docs_nodejs %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "ruby" %}
+      {% for article in site.docs_ruby %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}
