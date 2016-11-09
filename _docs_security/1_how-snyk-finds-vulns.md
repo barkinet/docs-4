@@ -3,6 +3,7 @@ title: How Snyk finds out about new vulnerabilities
 ---
 
 We monitor existing security portals and tools, such as:
+
 * [Node Security Project](https://nodesecurity.io/)
 * [RubySec](http://rubysec.com/)
 * [Retire.js](http://retirejs.github.io/retire.js/). 
