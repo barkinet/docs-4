@@ -2,7 +2,7 @@
 title: Integrating Snyk into your build system
 ---
 
-To continuously avoid known vulnerabilities in your dependencies, integrate Snyk into your continuous integration (a.k.a. build) system. Here are the steps required to to so:
+To continuously avoid known vulnerabilities in your Node.js dependencies, integrate Snyk into your continuous integration (a.k.a. build) system. Here are the steps required to to so:
 
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Run `snyk wizard` in the directory of your project following the prompts which will also generate a `.snyk` policy file. For more information about this, see [our CLI documentation](/docs/using-snyk/#wizard).

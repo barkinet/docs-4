@@ -2,9 +2,7 @@
 title: GitHub badge
 ---
 
-Badges for GitHub repositories work the same as npm badges, with a slightly different URL.
-
-To show a badge for a given GitHub repository, copy the relevant snippet below and replace "user/name" with the GitHub username and repo you want to test.
+To show a badge for a given Node.js or Ruby GitHub repository, copy the relevant snippet below and replace "user/name" with the GitHub username and repo you want to test.
 
 ### HTML:
 
