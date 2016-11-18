@@ -2,50 +2,34 @@
 title: ""
 ---
 
-* Get started securing your repos by __<a href="https://snyk.io/docs/github/" title="GitHub Integration">integrating Snyk with GitHub.</a>__
-* Check our __<a href="https://snyk.io/docs/using-snyk/" title="Snyk CLI">detailed documentation for using Snyk CLI.</a>__
+Snyk continuously finds and fixes vulnerabilities in your dependencies. 
 
-Need help with anything you can’t find here? [Drop us a line](mailto:support@snyk.io) and we’ll get right back to you.
+## Snyk for Node.js
 
-## CLI commands overview
+If you want to secure Node.js projects, we recommend to get started with our [GitHub integration](https://snyk.io/docs/github/). 
+Alternatively, use our [CLI tool for Node.js](https://snyk.io/docs/using-snyk/). Our [CI integration](https://snyk.io/docs/ci/) is easy to set up and works with Travis, Circle, Codeship and other tools. 
 
-```console
-snyk [options] [command] [package]
-```
+If you're using Bitbucket, sign up and try our [CI integration](https://snyk.io/docs/ci/), and check our setup instrutions for [Bitbucket Pipelines](https://snyk.io/docs/bitbucket/).
 
-The package argument is optional. If no package is given, Snyk will run the command against the current working directory allowing you test you non-public applications.
+## Snyk for Ruby
 
-### Commands
+Find and fix your Ruby projects that have their dependencies managed by Bundler with our [GitHub integration](https://snyk.io/docs/github/). 
 
-```console
-auth [api-token].....sign into snyk.
-test ............... test for any known vulnerabilities.
-wizard ............. configure your policy file to update, auto patch and ignore vulnerabilities.
-protect ............ protect your code from vulnerabilities and optionally suppress specific vulnerabilities.
-monitor ............ record the state of dependencies and any vulnerabilities on snyk.io.
-policy ............. display the Snyk policy for a package.
-```
+You’ll need to have your Gemfile.lock checked into the root of your repository. Support for gem libraries is in the pipeline.
+If you require a CLI tool for Ruby, please [let us know](mailto:support@snyk.io).
 
-### Options
+## Snyk for GitHub Enterprise
 
-```console
---dev .............. include devDependencies (defaults to production only)
---ignore-policy .... ignores and resets the state of your policy file
---trust-policies ... applies and uses ignore rules from your dependencies's Snyk policies,
-                     otherwise ignore policies are only shown as a suggestion.
---dry-run .......... don't apply updates or patches during protect.
--q, --quiet ........ silence all output.
--h, --help ......... this help information.
--v, --version ...... the CLI version.
-```
+Snyk can be used with private GitHub Enterprise installations via a custom proxy, referred to as the Snyk “broker”. A Snyk broker can also be used between Snyk and github.com itself, to reduce Snyk’s access to your GitHub repositories. 
 
-### Examples
+Check our [GitHub Enterprise documentation](https://snyk.io/docs/snyk-broker/). If you're interested in using it, [get in touch](mailto:support@snyk.io).
 
-```console
-snyk test
-snyk test ionic@1.6.5
-```
+## Security at Snyk
 
-<p class="layout-aside backdrop-glowing u--push-bottom-l u--push-top-l">
-  Use <code>snyk test</code> in your test scripts. If a vulnerability is found, the process will exit with a non-zero exit code.
-</p>
+You can find out more about our security process and disclosure policy in our [security documenation](https://snyk.io/docs/security/).
+
+## Frequently Asked Questions
+
+Our [FAQs](https://snyk.io/docs/faqs/) answer questions you might have about known vulnerabilities, fixing vulnerabilities, using Snyk behind a proxy, and more.
+
+**Need help with anything you can’t find here?** [Drop us a line](mailto:support@snyk.io) and we’ll get right back to you.
