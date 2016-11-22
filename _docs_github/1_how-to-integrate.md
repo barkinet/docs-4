@@ -11,3 +11,5 @@ You can add your Node.js and Ruby GitHub repos and quickly test them, or decide 
 3. Next, you’ll see a list of all GitHub repos across your GitHub organisations. Snyk automatically tests these repos, and you’ll see the test results, with the option to view a detailed test report.
 4. Clicking ‘Watch’ will add this repo as a project to Snyk. The watched repos appear in your projects, and will be continuously checked for vulnerabilities.
 5. "Open a fix PR" lets you fix vulnerabilities right away. You'll be able to review the suggested remediations, and create a PR with the required upgrades or patches.
+
+<div class="alert alert--inline alert--notice"><p class="alert__text">To view your organisation's projects in Snyk, you'll need to have <a href="#authorizing-github">sufficient access</a> to your organisation's repositories on GitHub.</p></div>
