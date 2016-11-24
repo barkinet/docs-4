@@ -8,6 +8,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_landing" : "true",
     "topic" : "landing",
+    "topicSlug" : "landing",
     "url"     : "/docs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -16,7 +17,8 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_quick-start" : "true",
-    "topic" : "quick-start",
+    "topic" : "quickStart",
+    "topicSlug" : "quick-start",
     "url"     : "/docs/quick-start/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -26,6 +28,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_ruby" : "true",
     "topic" : "ruby",
+    "topicSlug" : "snyk-for-ruby",
     "url"     : "/docs/ruby/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -35,6 +38,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_nodejs" : "true",
     "topic" : "nodejs",
+    "topicSlug" : "snyk-for-nodejs",
     "url"     : "/docs/nodejs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -44,6 +48,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_orgs" : "true",
     "topic" : "orgs",
+    "topicSlug" : "orgs",
     "url"     : "/docs/orgs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -53,6 +58,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_security" : "true",
     "topic" : "security",
+    "topicSlug" : "security",
     "url"     : "/docs/security/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -62,6 +68,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_github" : "true",
     "topic" : "github",
+    "topicSlug" : "github",
     "url"     : "/docs/github/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -71,6 +78,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_ci" : "true",
     "topic" : "ci",
+    "topicSlug" : "ci",
     "url"     : "/docs/ci/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -79,7 +87,8 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_using-snyk" : "true",
-    "topic" : "using-snyk",
+    "topic" : "usingSnyk",
+    "topicSlug" : "using-snyk",
     "url"     : "/docs/using-snyk/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -88,6 +97,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     "topic" : "badges",
+    "topicSlug" : "badges",
     {% endif %}"docs_badges" : "true",
     "url"     : "/docs/badges/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
@@ -98,6 +108,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_bitbucket" : "true",
     "topic" : "bitbucket",
+    "topicSlug" : "bitbucket",
     "url"     : "/docs/bitbucket/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -106,7 +117,8 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_slack-integration" : "true",
-    "topic" : "slack-integration",
+    "topic" : "slack",
+    "topicSlug" : "slack-integration",
     "url"     : "/docs/slack-integration/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -116,6 +128,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_broker" : "true",
     "topic" : "broker",
+    "topicSlug" : "snyk-broker",
     "url"     : "/docs/broker/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -125,6 +138,7 @@ layout:
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_faqs" : "true",
     "topic" : "faqs",
+    "topicSlug" : "faqs",
     "url"     : "/docs/faqs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
