@@ -7,6 +7,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_landing" : "true",
+    "topic" : "landing",
     "url"     : "/docs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -15,6 +16,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_quick-start" : "true",
+    "topic" : "quick-start",
     "url"     : "/docs/quick-start/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -23,6 +25,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_ruby" : "true",
+    "topic" : "ruby",
     "url"     : "/docs/ruby/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -31,6 +34,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_nodejs" : "true",
+    "topic" : "nodejs",
     "url"     : "/docs/nodejs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -39,6 +43,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_orgs" : "true",
+    "topic" : "orgs",
     "url"     : "/docs/orgs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -47,6 +52,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_security" : "true",
+    "topic" : "security",
     "url"     : "/docs/security/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -55,6 +61,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_github" : "true",
+    "topic" : "github",
     "url"     : "/docs/github/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -63,6 +70,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_ci" : "true",
+    "topic" : "ci",
     "url"     : "/docs/ci/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -71,6 +79,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_using-snyk" : "true",
+    "topic" : "using-snyk",
     "url"     : "/docs/using-snyk/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -78,6 +87,7 @@ layout:
   {% endfor %}{% assign badges = site.docs_badges | where: 'draft', 'false' %}{% for article in badges %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    "topic" : "badges",
     {% endif %}"docs_badges" : "true",
     "url"     : "/docs/badges/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
@@ -87,6 +97,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_bitbucket" : "true",
+    "topic" : "bitbucket",
     "url"     : "/docs/bitbucket/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -95,6 +106,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_slack-integration" : "true",
+    "topic" : "slack-integration",
     "url"     : "/docs/slack-integration/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -103,6 +115,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_broker" : "true",
+    "topic" : "broker",
     "url"     : "/docs/broker/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
@@ -111,6 +124,7 @@ layout:
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
     {% endif %}"docs_faqs" : "true",
+    "topic" : "faqs",
     "url"     : "/docs/faqs/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
