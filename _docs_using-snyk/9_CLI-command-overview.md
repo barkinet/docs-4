@@ -2,8 +2,6 @@
 title: CLI commands overview
 ---
 
-## CLI commands overview
-
 ```console
 snyk [options] [command] [package]
 ```
