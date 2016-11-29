@@ -96,9 +96,9 @@ layout:
   {% endfor %}{% assign badges = site.docs_badges | where: 'draft', 'false' %}{% for article in badges %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
-    "topic" : "badges",
+    {% endif %}"topic" : "badges",
     "topicSlug" : "badges",
-    {% endif %}"docs_badges" : "true",
+    "docs_badges" : "true",
     "url"     : "/docs/badges/{{ article.title | slugify }}",{% if article.title %}
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
