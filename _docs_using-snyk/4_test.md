@@ -1,7 +1,7 @@
 ---
 title: Test
 ---
-**Test a local project**
+<h3>Test a local project</h3>
 <p>To only test your project for known vulnerabilities, browse to your project’s folder and run <code>snyk test</code>:</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproj/</span>
@@ -27,7 +27,7 @@ title: Test
 <p>Note for Node.js: <br>
 Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
-**Test a public GitHub repository**
+<h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test https://github.com/snyk/snyk</span></code></pre></div>
 <p>The following git URL formats are supported:</p>
@@ -40,7 +40,7 @@ Since <code>snyk test</code> looks at the locally installed modules, it needs to
 <p>This also works for Bitbucket and GitLab.</p>
 <p>You can also test a public npm package or Github project <a href="https://snyk.io/test/" title="Test page">via the Test page on snyk.io.</a></p>
 
-**Test a public npm package**
+<h3>Test a public npm package</h3>
 <p>You can also use <code>snyk test</code> to <strong>scrutinize a public package before installing it</strong>, to see if it has known vulnerabilities or not. Using the package name will test the latest version of that package, and you can also provide a specific version or range using <code>snyk test module[@semver-range]</code>.</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">snyk test lodash</span>

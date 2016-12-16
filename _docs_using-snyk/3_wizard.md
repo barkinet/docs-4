@@ -32,8 +32,8 @@ Snyk's wizard will:
   * Guide you through fixing found vulnerabilities
   * Create a .snyk policy file to guide snyk commands such as test and protect
   * Remember your dependencies to alert you when new vulnerabilities are disclosed
- 
- Note: Node.js only. 
+
+ Note: Node.js only.
 
 Loading dependencies...
 Querying vulnerabilities database...
@@ -61,7 +61,7 @@ Tested 446 dependencies for known vulnerabilities, <span class="syn--red syn--bo
 
 <p>Lastly, the wizard will create the <code>.snyk</code> file, modify <code>package.json</code> and run <code>npm update</code> to apply the changes. To monitor your project for new vulnerabilities, the wizard takes a snapshot of your current dependencies (similar to running <a href="#monitor"><code>snyk monitor</code></a>). You can see all the snapshots for a project on the snyk website. We'll notify you via email if you're affected by newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are available.</p>
 
-<h3 id="a-few-things-to-note">A few things to note:</h3>
+<h3>A few things to note:</h3>
 
 <ul>
   <li>The wizard doesn’t perform any git (or source control) actions, so be sure to add the <code>.snyk</code> file to your repository.</li>
