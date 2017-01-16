@@ -5,7 +5,7 @@ title: CLI commands overview
 ```console
 snyk [options] [command] [package]
 ```
-The package argument is optional. If no package is given, Snyk will run the command against the current working directory allowing you test you non-public applications.
+The package argument is optional. If no package is given, Snyk will run the command against the current working directory allowing you test your non-public applications.
 
 ### Commands
 
@@ -29,7 +29,7 @@ policy ............. Display the Snyk policy for a package.
 --org=<org-name> ... Associate a snapshot (or wizard snapshot) with a specific
                      organisation. For more help run `snyk help orgs`.
 --ignore-policy .... Ignores and resets the state of your policy file.
---trust-policies ... Applies and uses ignore rules from your dependencies's Snyk policies,
+--trust-policies ... Applies and uses ignore rules from your dependencies' Snyk policies,
                      otherwise ignore policies are only shown as a suggestion.
 --dry-run .......... Don't apply updates or patches during protect.
 -q, --quiet ........ Silence all output.

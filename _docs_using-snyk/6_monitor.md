@@ -4,7 +4,8 @@ title: Monitor
 
 <p>With <a href="#test"><code>test</code></a> and <a href="#protect"><code>protect</code></a>, you’re well set up to address currently known vulnerabilities. However, new vulnerabilities are constantly disclosed - which is where <code>monitor</code> comes in.</p>
 
-<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproject/ snyk monitor</span></code></pre></div>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproject/</span>
+<span class="go">snyk monitor</span></code></pre></div>
 
 <p>Just before you deploy, run <code>snyk monitor</code> in your project directory. This will take a snapshot of your current dependencies, so we can notify you about newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are created. If you take multiple snapshots of the same project, we will only alert you to new information about the latest one.</p>
 
