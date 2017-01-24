@@ -16,7 +16,7 @@ If your instance of the Snyk CLI has started failing, follow these steps to reso
    snyk auth <your token>
    ```
 
-3. If you are still having problems after upgrading and authenticating send an email to [support@snyk.io](mailto:support@snyk.io) and we will try to help you out.
+3. If you are still having problems after upgrading and authenticating send an email to [support@snyk.io](mailto:support@snyk.io) and we will help you out.
 
 ### Note:
 
