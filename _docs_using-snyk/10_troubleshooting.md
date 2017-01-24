@@ -20,6 +20,6 @@ If your instance of the Snyk CLI has started failing, follow these steps to reso
 
 ### Note:
 
-Authentication is required for snyk test and snyk monitor from Tuesday the 24th of January 2017 for details on why we require authentication take a look at our blog post [Requiring authentication in Snyk CLI](https://snyk.io/blog/requiring-authentication/).
+Authentication is required for `snyk test` and `snyk monitor` from Tuesday the 24th of January 2017 for details on why we require authentication take a look at our blog post [Requiring authentication in Snyk CLI](https://snyk.io/blog/requiring-authentication/).
 
 Registration with Snyk is free. If you do not already have an account all you need to do is run `snyk auth` in your terminal (or [sign up](https://snyk.io/signup)) to get an account setup.
