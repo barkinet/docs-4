@@ -35,3 +35,9 @@ Whenever a vulnerability is disclosed that affects a repo you’re watching, Sny
 #### Get a Snyk pull request when new upgrades or patches are available
 
 When no upgrade is available, you can ignore or patch the vulnerability (patching is only available for Node.js projects). When a better remediation option has become available, for example an upgrade for a vulnerability you previously ignored, Snyk notifies you about this via email, and also generates a pull request with the new fix.
+
+#### Disable automatic pull requests
+
+You can disable Snyk's auto-generated pull requests with fixes in your organisation settings. This will affect all projects in the organisation. 
+
+![Disable automatic fix PRs](https://res.cloudinary.com/snyk/image/upload/c_scale,w_365/v1485530032/docs/Auto_PR_settings.png)
