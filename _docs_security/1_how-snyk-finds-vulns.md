@@ -13,4 +13,4 @@ Most of the vulnerabilities in our database originate from one of these sources:
 * *Bulk research*, using tools that look for repeated security mistakes across open source package code
 * *Manual research*, investing our researchers time to manually audit more widely used packages for security flaws.
 
-For every issue deemed to be a real vulnerability, we assign the right severity and package version specification, create an advisory, and make it available in the product. 
+For every issue deemed to be a real vulnerability, we assign the right CVSS (severity) score and package version specification, create an advisory, and make it available in the product. 
