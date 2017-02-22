@@ -10,7 +10,7 @@ Known vulnerabilities are publicly disclosed security bugs, typically found and 
 
 Known vulnerabilities can be introduced either via a direct or via a deep dependency.
 
-* A direct dependency is a is a package that you've included in your own project via package.json or Gemfile.
+* A direct dependency is a package that you've included in your own project via package.json or Gemfile.
 * A deep dependency, also referred to as an indirect, chained, or transitive dependency, is a package that you are not using directly, but one that is used by one of your direct dependencies.
 
 In other words, if your application is using package A, and package A is using package B, then your application is indirectly depending on package B. And if package B is vulnerable, you are vulnerable.
