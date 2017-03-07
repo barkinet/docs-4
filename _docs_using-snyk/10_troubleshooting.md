@@ -10,11 +10,7 @@ If your instance of the Snyk CLI has started failing, follow these steps to reso
    npm install -g snyk
    ```
 2. Make sure you are authenticating prior to running the Snyk CLI command
-   You can either authenticate by running `snyk auth` in your terminal, and it’ll guide you through this process, or visit [your account](https://snyk.io/account) and copy your API token and paste it into your terminal as follows:
-
-   ```bash
-   snyk auth <your token>
-   ```
+   You can either authenticate by running `snyk auth` in your terminal, and it’ll guide you through this process, or visit [your account](https://snyk.io/account), copy your API token and set the environment variable `SNYK_TOKEN` to your token.
 
 3. If you are still having problems after upgrading and authenticating send an email to [support@snyk.io](mailto:support@snyk.io) and we will help you out.
 
