@@ -27,7 +27,7 @@ If you found issues, Snyk will help you fix them with the click of a “Fix” b
 ![Fix your issues with a click with an auto-generated remediation pull request](https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1466096854/features-remediation-PR.png)
 
 
-This click will generate a Pull Request with the minimal changes needed to fix the issue and get back to writing code. Where possible, Snyk will find the minimal direct upgrade you can apply to get a non-vulnerable version of the package in question. If you can't upgrade, Snyk will aim to patch the vulnerability using [open source patches from its VulnDB](https://github.com/Snyk/vulndb/).
+This click will generate a Pull Request with the minimal changes needed to fix the issue and get back to writing code. Where possible, Snyk will find the minimal direct upgrade you can apply to get a non-vulnerable version of the package in question. If you can't upgrade, Snyk will aim to patch the vulnerability using [open source patches from its Vulnerability DB](https://github.com/Snyk/vulndb/).
 
 ## Prevent adding vulnerable packages
 Once you're free of vulnerabilities, you need to make sure you don't add new vulnerable packages as your application evolves. To help with that, Snyk integrates its test directly into your Pull Request tests, catching vulnerable packages before they truly enter your application.
