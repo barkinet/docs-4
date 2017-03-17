@@ -2,4 +2,4 @@
 title: "Fixing Ruby projects"
 ---
 
-We fix by updating vulnerable gems, using `bundle update`, without changing your Gemfile (sticking to the rules you have specified there). This means that in some scenarios we won’t be able to upgrade dependencies to a non-vulnerable version. In this case, you should consider updating the rules in your Gemfile. In future releases, we are planning to provide suggestions to make this easier. 
+Currently we only support fixing Ruby projects through our GitHub integration. We fix by updating vulnerable gems, using `bundle update`, after modifying your Gemfile (sticking to the rules you have specified there as far as possible). This means that in some scenarios we won’t be able to upgrade all dependencies to non-vulnerable versions. In this case, you should consider updating the rules in your Gemfile. In future releases, we are planning to provide suggestions to make this easier.
