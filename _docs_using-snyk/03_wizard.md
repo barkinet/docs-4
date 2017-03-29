@@ -56,7 +56,7 @@ Tested 446 dependencies for known vulnerabilities, <span class="syn--red syn--bo
 <p>Once all the issues are addressed, <code>snyk wizard</code> will optionally integrate some tests and protection steps into your <code>package.json</code> file:
 <ul>
 	<li>It can add <a href="#test"><code>snyk test</code></a> to the <code>test</code> script, which will query your local dependencies for vulnerabilities and err if found (except those you chose to ignore).</li>
-	<li>If you chose to patch an issue, the wizard will optionally add <a href="#protect"><code>snyk protect</code></a> to your project as a <code>post-install</code> step. This is helpful if you publish this module, as it will repeatedly patch the issues specified in <code>.snyk</code> every time a module is installed.</p></li>
+	<li>If you chose to patch an issue, the wizard will optionally add <a href="#protect"><code>snyk protect</code></a> to your project as a <code>post-install</code> step. This is helpful if you publish this module, as it will repeatedly patch the issues specified in <code>.snyk</code> every time a module is installed.</li>
 </ul>
 
 <p>Lastly, the wizard will create the <code>.snyk</code> file, modify <code>package.json</code> and run <code>npm update</code> to apply the changes. To monitor your project for new vulnerabilities, the wizard takes a snapshot of your current dependencies (similar to running <a href="#monitor"><code>snyk monitor</code></a>). You can see all the snapshots for a project on the snyk website. We'll notify you via email if you're affected by newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are available.</p>
