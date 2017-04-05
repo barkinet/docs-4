@@ -25,7 +25,7 @@ title: Test
 <span class="go">snyk test *</span></code></pre></div>
 
 <p>Note for Node.js: <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>

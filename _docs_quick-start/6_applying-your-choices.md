@@ -33,6 +33,6 @@ We'll notify you when relevant new vulnerabilities are disclosed.
 ```
 _Snyk wizard applied changes._
 
-With all the questions answered, the wizard proceeds to apply the changes. It modifies the Package.json file with any upgrade requests or hooks, runs `npm update` to apply the changes, and stores the Snyk policy in the _.snyk_ file (you can pretty-print it by running `snyk policy`). Make sure to add this _.snyk_ file to your source control for patch and ignore instructions to apply.
+With all the questions answered, the wizard proceeds to apply the changes. It modifies the Package.json file with any upgrade requests or hooks, runs `npm` commands to apply the changes, and stores the Snyk policy in the _.snyk_ file (you can pretty-print it by running `snyk policy`). Make sure to add this _.snyk_ file to your source control for patch and ignore instructions to apply.
 
 Lastly, the wizard takes a snapshot of your dependencies, so it can monitor them over time.
