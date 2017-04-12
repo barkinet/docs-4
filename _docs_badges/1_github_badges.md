@@ -2,7 +2,7 @@
 title: GitHub badge
 ---
 
-To show a badge for a given Node.js or Ruby GitHub repository, copy the relevant snippet below and replace "user/name" with the GitHub username and repo you want to test.
+To show a badge for a given Node.js, Ruby or Java GitHub repository, copy the relevant snippet below and replace "user/name" with the GitHub username and repo you want to test.
 
 ### HTML:
 
