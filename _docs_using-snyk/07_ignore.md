@@ -26,7 +26,7 @@ title: Ignore
       <td><code>--id</code></td>
       <td><p>The Snyk ID for the issue to ignore. Found by running <code>snyk test</code> and grabbing the last segment of the URL for a given vulnerability.</p>
 
-      <p><strong>Example:</strong> For the vulnerability found at <a href="https://snyk.io/vuln/npm:tough-cookie:20160722">https://snyk.io/vuln/npm:tough-cookie:20160722</a>, you would use:<br/> <code>--id="npm:tough-cookie:20160722"</code></p></td>
+      <p><strong>Example:</strong> For the vulnerability found at <a href="https://snyk.io/vuln/npm:tough-cookie:20160722">https://snyk.io/vuln/npm:tough-cookie:20160722</a>, you would use:<br/> <code>--id=npm:tough-cookie:20160722</code></p></td>
       <td>None</td>
       <td><strong>Yes</strong></td>
     </tr>
@@ -34,7 +34,7 @@ title: Ignore
       <td><code><span style="white-space: nowrap;">--expiry</span></code></td>
       <td><p>The expiry date string, according to <a href="https://tools.ietf.org/html/rfc2822#page-14">RFC2822</a>.</p>
 
-      <p><strong>Example:</strong> <code>--expiry="2017-04-30"</code></p></td>
+      <p><strong>Example:</strong> <code>--expiry=2017-04-30</code></p></td>
       <td>30 days</td>
       <td>No</td>
     </tr>
@@ -42,8 +42,8 @@ title: Ignore
       <td><code>--reason</code></td>
       <td><p>The reason for ignoring the issue.</p>
 
-      <p><strong>Example:</strong> <code>--reason="Not currently exploitable."</code></p></td>
-      <td>None</td>
+      <p><strong>Example:</strong> <code>--reason='Not currently exploitable.'</code></p></td>
+      <td>"None Given"</td>
       <td>No</td>
     </tr>
   </tbody>
