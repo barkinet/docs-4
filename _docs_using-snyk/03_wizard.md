@@ -9,13 +9,15 @@ title: Wizard
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">cd ~/projects/myproj/</span>
 <span class="go">snyk wizard</span></code></pre></div>
 
+<p>Please note that if a <code>yarn.lock</code> file is detected in your folder, the wizard will ask you whether to treat the project as a <code>Yarn</code> project (the default answer), or as an <code>npm</code> project.</p>
+
 <p>The wizard goes through multiple phases.
 First, it takes stock of which dependencies are locally installed, queries the snyk service for related known vulnerabilities, and asks you how you want to address each vulnerability that was found. As you answer the questions, the wizard will create a Snyk policy file, stored in a file named <code>.snyk</code>, which will guide future Snyk commands.</p>
 
 <p>Here are the possible remediation steps for each vulnerability:</p>
 
 <ul>
-  <li><strong>Upgrade</strong> - if upgrading a direct dependency can fix the current vulnerability, the wizard can automatically modify your <code>package.json</code> file to use the newer version and run <code>npm update</code> to apply the changes.</li>
+  <li><strong>Upgrade</strong> - if upgrading a direct dependency can fix the current vulnerability, the wizard can automatically modify your <code>package.json</code> file to use the newer version and uses <code>npm</code> or <code>yarn</code> to apply the changes.</li>
   <li><strong>Patch</strong> - Sometimes there is no direct upgrade that can address the vulnerability, or there is one but you can’t upgrade due to functional reasons (e.g. it’s a major breaking change). For such cases, the wizard lets you patch the issue (using patches the Snyk team created and maintain). This option will make the minimal modifications to your locally installed module files to fix the vulnerability. It will also update the policy to patch this issue when running <a href="#protect"><code>snyk protect</code></a>, as shown below.</li>
   <li><strong>Ignore</strong> - If you believe this vulnerability is not exploitable, you can set the Snyk policy to ignore this vulnerability. By default, we will ignore the vulnerability for 30 days, to avoid easily hiding a true issue. If you want to ignore it permanently, you can manually edit the generated <code>.snyk</code> file. If neither a patch nor an upgrade are available, you can choose to ignore the issue for now, and we’ll notify you when a new patch or upgrade is available.</li>
 </ul>
@@ -60,7 +62,7 @@ Tested 446 dependencies for known vulnerabilities, <span class="syn--red syn--bo
 </ul>
 </p>
 
-<p>Lastly, the wizard will create the <code>.snyk</code> file, modify <code>package.json</code> and run <code>npm update</code> to apply the changes. To monitor your project for new vulnerabilities, the wizard takes a snapshot of your current dependencies (similar to running <a href="#monitor"><code>snyk monitor</code></a>). You can see all the snapshots for a project on the snyk website. We'll notify you via email if you're affected by newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are available.</p>
+<p>Lastly, the wizard will create the <code>.snyk</code> file, modify <code>package.json</code> and use <code>npm</code> or <code>yarn</code> to apply the changes. To monitor your project for new vulnerabilities, the wizard takes a snapshot of your current dependencies (similar to running <a href="#monitor"><code>snyk monitor</code></a>). You can see all the snapshots for a project on the snyk website. We'll notify you via email if you're affected by newly disclosed vulnerabilities in them, or when a previously unavailable patch or upgrade path are available.</p>
 
 <h3>A few things to note:</h3>
 

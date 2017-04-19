@@ -14,9 +14,17 @@ If you're using Bitbucket, sign up and try our [CI integration](https://snyk.io/
 ## Snyk for Ruby
 
 Find and fix your Ruby projects that have their dependencies managed by Bundler with our [GitHub integration](https://snyk.io/docs/github/).
-Our [CLI tool](https://snyk.io/docs/using-snyk/) also supports Ruby, and you can test and monitor your apps continuously with our [CI integration](https://snyk.io/docs/ci#ruby-ci-integration).
+
+Our [CLI tool](https://snyk.io/docs/using-snyk/) also supports Ruby, and you can test and monitor your apps continuously with our [CI integration](https://snyk.io/docs/ci#ruby-or-java-ci-integration).
 
 You’ll need to have your Gemfile.lock checked into the root of your repository. Support for gem libraries is in the pipeline.
+
+## Snyk for Java
+
+Protect your Java projects that have their dependencies managed by Maven with our [GitHub integration](https://snyk.io/docs/github/).
+Our [CLI tool](https://snyk.io/docs/using-snyk/) also supports Java, and you can test and monitor your apps continuously with our [CI integration](https://snyk.io/docs/ci#ruby-or-java-ci-integration).
+
+You’ll need to have your pom.xml checked into the root of your repository.
 
 ## Snyk for GitHub Enterprise
 

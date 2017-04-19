@@ -9,14 +9,12 @@ title: Test
 
 <p><code>snyk test</code> takes stock of all the local dependencies and queries the snyk service for related known vulnerabilities. It displays the found issues along with additional information. For Node.js projects, it also suggests remediation steps.</p>
 
+<p>When <code>snyk test</code> runs, it tries to detect the appropriate file for your project by looking for the following files, in this order:</p>
+<ol><li>yarn.lock</li><li>package.json</li><li>Gemfile</li><li>Gemfile.lock</li><li>pom.xml</li></ol>
+
 <p>When testing locally, you can specify the file that Snyk should inspect for package information.</p>
 
 <div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">$ snyk test --file=package.json</span>
-</code></pre></div>
-
-<p>When ommitted Snyk will try to detect the appropriate file for your project by looking for a <code>package.json</code> or <code>Gemfile</code> file. If both files exist it will use the package.json file. In this case you can force a Ruby test by pointing to your Gemfile.
-
-<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go"> $ snyk test --file=Gemfile</span>
 </code></pre></div>
 
 <p><code>snyk test</code> can also get a folder name as an argument, which is especially handy if you want to <strong>test multiple projects.</strong> For instance, the following command tests all the projects under a certain folder for known vulnerabilities:</p>
@@ -25,7 +23,10 @@ title: Test
 <span class="go">snyk test *</span></code></pre></div>
 
 <p>Note for Node.js: <br>
-Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>npm install</code> or <code>yarn install</code>, and will seamlessly work with <code>shrinkwrap</code>, npm enterprise or any other custom installation logic you have.</p>
+
+<p>Note for Java: <br>
+Since <code>snyk test</code> looks at the locally installed modules, it needs to run after <code>mvn install</code>.</p>
 
 <h3>Test a public GitHub repository</h3>
 <p>To test a public Github repository, run <code>snyk test</code> and include the Github URL to the repo.</p>

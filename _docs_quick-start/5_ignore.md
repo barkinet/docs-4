@@ -16,7 +16,7 @@ This issue the wizard shows is not as easily solved.
 ```
 _Validator vulnerability_
 
-A vulnerability is found in a deep `validator` dependency, which has neither an upgrade nor a patch available. There are many combinations of vulnerability and module versions, and not all of them can be patched. Snyk’s security team is constantly adding more patches to the [open source VulnDB](https://github.com/Snyk/vulndb) and would [welcome pull requests](https://github.com/Snyk/vulndb/blob/master/CONTRIBUTING.md), but some issues still have no patch.
+A vulnerability is found in a deep `validator` dependency, which has neither an upgrade nor a patch available. There are many combinations of vulnerability and module versions, and not all of them can be patched. Snyk’s security team is constantly adding more patches to the [open source Vulnerability DB](https://github.com/Snyk/vulndb) and would [welcome pull requests](https://github.com/Snyk/vulndb/blob/master/CONTRIBUTING.md), but some issues still have no patch.
 
 There’s no easy fix for these issues. You’ll need to better understand the risk this issue presents to your system, and weigh this risk against the effort of fixing the issue – for instance, by removing the dependency. While you consider your actions, you can ‘snooze’ the issue with Snyk, telling it to ignore the issue for 30 days. Snyk will prompt you to provide a reason for ignoring, to help you remember why you did it later on.
 

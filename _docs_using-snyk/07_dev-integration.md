@@ -11,20 +11,13 @@ title: Integrating Snyk into your dev workflow
 3. Ensure the `.snyk` file you generated was added to your source control (`git add .snyk`).
 4. If you selected to, Snyk will include `snyk test` as part of your `npm test` command, so if there are new vulnerabilities in the future, your CI will fail, protecting you from introducing vulnerabilities to production. Alternatively, you can add `snyk test` to any other CI test platform you use.
 
-<h3>For Ruby CI</h3>
+<h3>For Ruby and Java CI</h3>
 
 1. Install the Snyk utility using `npm install -g snyk`.
 2. Add `snyk test` to your CI test platform
 
 <h3>Setting up automatic monitoring</h3>
-If you monitor a project with Snyk, you'll get notified if your project's dependencies are affected by newly disclosed vulnerabilities. To make sure this list of dependencies is up to date, refresh it continuously by running `snyk monitor` in your deployment process. You'll also need to authenticate to Snyk, so we can know where to update the dependencies.
-
-To do both, add the following to your deployment scripts:
-
-```
-snyk auth $SNYK_TOKEN
-snyk monitor
-```
+If you monitor a project with Snyk, you'll get notified if your project's dependencies are affected by newly disclosed vulnerabilities. To make sure the list of dependencies we have for your project is up to date, refresh it continuously by running `snyk monitor` in your deployment process.
 
 Configure your environment to include the `SNYK_TOKEN` environment variable. You can find your API token on the dashboard after logging in.
 
