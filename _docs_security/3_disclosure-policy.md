@@ -15,16 +15,17 @@ Snyk will verify and document each reported vulnerability prior to developer not
 
 ### 2. Developer Notification
 
-The first phase of the public disclosure process, goal is to provide vulnerability details necessary for the developer to begin its internal resolution process.
+The first phase of the public disclosure process, with a goal to provide vulnerability details necessary for the developer to begin their internal resolution process.
 
 If the developer has not acknowledged receipt within 30 business days of the original notification, Snyk will retransmit the vulnerability details to the original contact and at least one secondary contact, if a secondary contact is publicly available. If the developer allows an additional ten business days to elapse following the second notification (40 business days since original notification) without acknowledging the information, vulnerability details will be re-sent not only to the previous two contacts, but also to customers or other stakeholders at Snyk's discretion.
 
-If the product developer does not respond to any of the three notification attempts within an additional ten days following the third notification (50 business days since original notification), or if the developer indicates that it does not wish to coordinate disclosure, Snyk may elect to issue a public advisory (Step 4).
+If the product developer does not respond to any of the three notification attempts within an additional ten days following the third notification (50 business days since original notification), or if the developer indicates they do not wish to coordinate disclosure, Snyk may elect to issue a public advisory (Step 4).
+
 Acknowledgement of the notification by the developer should include all of the following items:
 
 a. developer confirms the vulnerability information is received and the schedule for investigation.  
-b. developer provides a point of contact responsible for coordinating and tracking information on the issue from within its organization.  
-c. developer provides an estimate as to when it expects to complete its initial investigation of the security issue provided in the notification.  
+b. developer provides a point of contact responsible for coordinating and tracking information on the issue from within their organization.  
+c. developer provides an estimate as to when they expect to complete their initial investigation of the security issue provided in the notification.  
 
 ### 3. Developer Coordination
 
@@ -38,7 +39,7 @@ If developer responses to all communications in this phase are not received with
 
 ### 4. Public disclosure
 
-Public Disclosure is the final phase of the disclosure process. During this phase, Snyk intent is to add the vulnerability to it's [public database (vulndb)](https://snyk.io/vuln/), provide information on the vulnerability and related solutions. Public Disclosure may be initiated either by completing the Developer Coordination phase or through a process failure in prior phases.
+Public Disclosure is the final phase of the disclosure process. During this phase, Snyk's intent is to add the vulnerability to its [public database (vulndb)](https://snyk.io/vuln/), provide information on the vulnerability and related solutions. Public Disclosure may be initiated either by completing the Developer Coordination phase or through a process failure in prior phases.
 
 During the Public Disclosure phase Snyk, and optimally the developer, will disseminate information on the vulnerability and related solution to the public. Snyk may disseminate information through public e-mail lists, web pages or any other medium it deems appropriate to reach the intended audiences.
 
@@ -46,7 +47,7 @@ During the Public Disclosure phase Snyk, and optimally the developer, will disse
 
 As mentioned above, you can report issues simply by emailing us at [report@snyk.io](mailto:report@snyk.io), and a member of the Snyk team will review your confidential report.
 
-If possible, we recommend you encrypt such vulnerabiltiiy disclosures using the following PGP key:
+If possible, we recommend you encrypt such vulnerability disclosures using the following PGP key:
 
 ``` language-markup
 -----BEGIN PGP PUBLIC KEY BLOCK-----

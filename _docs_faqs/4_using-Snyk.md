@@ -16,7 +16,7 @@ To run Snyk from behind a proxy you will need to use an enviroment value to poin
 
 For example, to configure this as a one time value, you can run:
 
-`$ https_proxy=https://my.corporate.proxy:8080/ snyk test`
+`$ https_proxy=https://my.corporate.proxy:8080/ && snyk test`
 
 ### Why does Snyk install itself into my production dependencies?
 
