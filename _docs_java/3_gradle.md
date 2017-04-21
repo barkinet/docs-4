@@ -5,17 +5,18 @@ While Snyk does not currently have direct support for projects whose dependencie
 
 Here are the steps you'll need to take:
 
-1. Add the Gradle Maven Plugin to your `build.gradle` file by including the following line:
+<ol>
+<li>Add the Gradle Maven Plugin to your <code>build.gradle</code> file by including the following line:
 
-```
-apply plugin: 'maven'
-```
+<pre class=" language-console"><code class="language-console language-js" data-lang="console">apply plugin: 'maven'</code></pre>
+</li>
 
-2. Run `./gradlew install`. This will install the associated artificats to the local Maven cache (`~/.m2`).
-3. After running `install`, a new Maven-style pom file will be created in `build/poms/pom-default.xml`. Copy that file to the root directory:
+<li>Run <code>./gradlew install</code>. This will install the associated artificats to the local Maven cache (<code>~/.m2</code>).</li>
 
-```
-$ cp build/poms/pom-default.xml pom.xml
-```
+<li>After running <code>install</code>, a new Maven-style pom file will be created in <code>build/poms/pom-default.xml</code>. Copy that file to the root directory:
+
+<pre class=" language-console"><code class="language-console" data-lang="console">$ cp build/poms/pom-default.xml pom.xml</code></pre>
+</li>
+</ol>
 
 You should now have a `pom.xml` file that Snyk can test against. Now if you try to test the project with Snyk from the [CLI](/docs/using-snyk/), or by using the [GitHub integration](/docs/github), Snyk will see the `pom.xml` and test it as if it was a Maven-based project.
