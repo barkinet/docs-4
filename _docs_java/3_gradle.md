@@ -11,7 +11,7 @@ Here are the steps you'll need to take:
 <pre class=" language-console"><code class="language-console language-js" data-lang="console">apply plugin: 'maven'</code></pre>
 </li>
 
-<li>Run <code>./gradlew install</code>. This will install the associated artificats to the local Maven cache (<code>~/.m2</code>).</li>
+<li>Run <code>./gradlew install</code>. This will install the associated artifacts to the local Maven cache (<code>~/.m2</code>).</li>
 
 <li>After running <code>install</code>, a new Maven-style pom file will be created in <code>build/poms/pom-default.xml</code>. Copy that file to the root directory:
 
