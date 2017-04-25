@@ -43,3 +43,4 @@ collections:
   - docs_java
   - docs_ruby
   - docs_nodejs
+  - docs_heroku
