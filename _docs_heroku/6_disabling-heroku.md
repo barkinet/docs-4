@@ -9,5 +9,5 @@ You'll need to find the Heroku integration in your list of integrations, and cli
 
 If you choose to disconnect, your Heroku credentials will be removed from Snyk and any Heroku projects we had been monitoring will be deactivated on Snyk.
 
-If you choose to re-enable the Heroku integration at any time, you'll need to re-enter your credentials and active your projects.
+If you choose to re-enable the Heroku integration at any time, you'll need to re-enter your credentials and activate your projects.
 

@@ -9,5 +9,5 @@ You'll need to find the AWS Lambda integration in your list of integrations, and
 
 If you choose to disconnect, your AWS Lambda credentials will be removed from Snyk and any AWS Lambda projects we had been monitoring will be deactivated on Snyk.
 
-If you choose to re-enable the AWS Lambda integration at any time, you'll need to re-enter your credentials and active your projects.
+If you choose to re-enable the AWS Lambda integration at any time, you'll need to re-enter your credentials and activate your projects.
 
