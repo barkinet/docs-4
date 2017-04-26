@@ -5,7 +5,7 @@ At any time after you've entered your Heroku credentials, you can check on the c
 
 The first is on your [integration settings](https://snyk.io/org/snyk/manage/integrations) page, where you'll see your current integrations listed as well as their connection status.
 
-![Screenshot of the integration settings page](http://res.cloudinary.com/snyk/image/upload/c_scale,w_auto,q_auto/v1493154598/serverless-docs/integration-settings.png)
+![Screenshot of the integration settings page](http://res.cloudinary.com/snyk/image/upload/c_scale,w_auto,q_auto/v1493173707/serverless-docs/integration-settings.png)
 
 The connection status is also displayed directly on the Heroku integration settings  page (found by clicking "Edit settings" on the integration settings page shown above). If you've entered credentials, you'll see a box indicating whether or not Snyk is able to correctly connect to Heroku.
 

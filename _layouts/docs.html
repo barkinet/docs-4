@@ -13,7 +13,7 @@
     {% if page.section == "ruby" %}docs--ruby{% endif %}
     {% if page.section == "nodejs" %}docs--nodejs{% endif %}
     {% if page.section == "java" %}docs--java{% endif %}
-    {% if page.section == "aws-heroku" %}docs--heroku{% endif %}
+    {% if page.section == "heroku" %}docs--heroku{% endif %}
     {% if page.section == "aws-lambda" %}docs--lambda{% endif %}
     {% if page.section == "quick-start" %}docs--quick-start{% endif %}
     {% if page.section == "using-snyk" %}docs--using-snyk{% endif %}
@@ -228,6 +228,15 @@
 
        {% if page.section == "heroku" %}
       {% for article in site.docs_heroku %}
+      {% if article.draft %}<div class="status--draft">{% endif %}
+        {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
+        {{ article.content | markdownify }}
+      {% if article.draft %}</div><!-- .status--draft -->{% endif %}
+      {% endfor %}
+      {% endif %}
+
+      {% if page.section == "aws-lambda" %}
+      {% for article in site.docs_aws-lambda %}
       {% if article.draft %}<div class="status--draft">{% endif %}
         {% if article.title == "" %}{% else %}<h2 id="{{article.title | slugify}}">{{ article.title }}</h2>{% endif %}
         {{ article.content | markdownify }}

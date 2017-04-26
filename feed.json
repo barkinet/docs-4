@@ -23,6 +23,16 @@ layout:
     "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
     "content": {{ article.content | jsonify }}
   },
+  {% endfor %}{% assign lambda = site.docs_aws-lambda | where: 'draft', 'false' %}{% for article in lambda %}
+  {
+    {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
+    {% endif %}"docs_aws-lambda" : "true",
+    "topic" : "lambda",
+    "topicSlug" : "aws-lambda",
+    "url"     : "/docs/aws-lambda/{{ article.title | slugify }}",{% if article.title %}
+    "slug"     : {{ article.title | slugify | jsonify }},{% endif %}
+    "content": {{ article.content | jsonify }}
+  },
   {% endfor %}{% assign heroku = site.docs_heroku | where: 'draft', 'false' %}{% for article in heroku %}
   {
     {% if article.title == "" %}{% else %}"title" : {{ article.title | jsonify }},
