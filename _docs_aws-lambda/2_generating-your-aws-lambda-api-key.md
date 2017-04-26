@@ -5,7 +5,7 @@ To give Snyk access to your AWS Lambda account, you'll need both a valid Secret 
 
 You can find and create Access Key ID's for an IAM user from the [IAM console](https://console.aws.amazon.com/iam/). The Secret Access Key can also be obtained by then downloading the credentials.
 
-Alternatively, you can use the AWS CLI to generate your an Access Key ID for a user then subsequently to download the rest of their security credentials. For example, to set a new access Key ID for user 'Bob', you would run the following command:
+Alternatively, you can use the AWS CLI to generate an Access Key ID for a user as well as download the rest of their security credentials. For example, to set a new access Key ID for user 'Bob', you would run the following command:
 
 ```
 aws iam create-access-key --user-name Bob

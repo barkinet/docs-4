@@ -3,7 +3,7 @@ title: Checking your connection status
 ---
 At any time after you've entered your Heroku credentials, you can check on the connection status in one of two places. 
 
-The first is on your [integration settings](https://snyk.io/org/snyk/manage/integrations) page, where you'll see your current integrations listed as well as their connection status.
+The first is on your integration settings page, where you'll see your current integrations listed as well as their connection status.
 
 ![Screenshot of the integration settings page](http://res.cloudinary.com/snyk/image/upload/c_scale,w_auto,q_auto/v1493173707/serverless-docs/integration-settings.png)
 

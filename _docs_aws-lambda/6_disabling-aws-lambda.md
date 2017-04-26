@@ -1,7 +1,7 @@
 ---
 title: "Disabling the AWS Lambda Integration"
 ---
-If you decide to disable the AWS Lambda integration for any reason, you can accomplish this from the ["Integration Settings"](https://snyk.io/org/snyk/manage/integrations) page in your settings.
+If you decide to disable the AWS Lambda integration for any reason, you can accomplish this from the "Integration Settings" page in your settings.
 
 You'll need to find the AWS Lambda integration in your list of integrations, and click "Edit Settings". You'll be taken to a page that shows the current status of your AWS Lambda connection, a place to update your API key, and a red box at the bottom to disconnect from AWS Lambda.
 

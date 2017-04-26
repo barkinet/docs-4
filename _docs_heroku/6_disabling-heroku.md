@@ -1,7 +1,7 @@
 ---
 title: "Disabling the Heroku Integration"
 ---
-If you decide to disable the Heroku integration for any reason, you can accomplish this from the ["Integration Settings"](https://snyk.io/org/snyk/manage/integrations) page in your settings.
+If you decide to disable the Heroku integration for any reason, you can accomplish this from the "Integration Settings" page in your settings.
 
 You'll need to find the Heroku integration in your list of integrations, and click "Edit Settings". You'll be taken to a page that shows the current status of your Heroku connection, a place to update your API key, and a red box at the bottom to disconnect from Heroku.
 
