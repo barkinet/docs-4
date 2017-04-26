@@ -5,10 +5,10 @@ Once you've successfully connected Snyk to your AWS Lambda account, you'll be ab
 
 In either case, you'll see a list of any available projects on the AWS Lambda account you connected. Select the ones you want to monitor and click the "add to Snyk" button. 
 
-![Screenshot of the screen displaying the available AWS Lambda apps to monitor](http://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493173602/serverless-docs/aws-projects.png)
+![Screenshot of the screen displaying the available AWS Lambda apps to monitor](https://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493173602/serverless-docs/aws-projects.png)
 
 As soon as you've added the projects to Snyk, Snyk will test them and begin to display a list of all monitored AWS Lambda functions in your [project dashbard](https://snyk.io/projects). You'll also see a snapshot of any current vulnerabilities, and be able to click through for a more detailed report including any steps to remediate.
 
-![Screenshot of the screen displaying the available AWS Lambda apps to monitor](http://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493173601/serverless-docs/aws-functions-to-test.png)
+![Screenshot of the screen displaying the available AWS Lambda apps to monitor](https://res.cloudinary.com/snyk/image/upload/w_auto,c_scale,q_auto/v1493173601/serverless-docs/aws-functions-to-test.png)
 
 Snyk will now continuously monitor each of those functions for known vulnerabilities. You can add more functions at any time. 
