@@ -2,7 +2,7 @@
 title: ""
 ---
 
-Snyk's AWS Lambda integration lets you monitor the deployed code of your Node.js and Ruby AWS Lambda functions for any known vulnerabilities found in the application's dependencies, testing at a frequency you control.
+Snyk's AWS Lambda integration lets you monitor the deployed code of your Node.js AWS Lambda functions for any known vulnerabilities found in the application's dependencies, testing at a frequency you control.
 
 For each test, Snyk will communicate directly with AWS Lambda to determine exactly what code is currently deployed and what dependencies are being used. Each dependency will in turn be tested against Snyk's vulnerability database to see if it contains any known vulnerabilities. 
 
