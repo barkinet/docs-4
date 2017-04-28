@@ -9,4 +9,4 @@ This will take you to a page where you'll be prompted to enter your AWS Access K
 
 ![Screenshot of the form for entering your AWS Lambda credentials](https://res.cloudinary.com/snyk/image/upload/c_scale,w_auto,q_auto/v1493156169/serverless-docs/aws-credentials.png)
 
-Instructions for how to [generate and locate your AWS Lambda credentials](#generating-your-aws-lambda-api-key) are below.
+Instructions for how to [generate and locate your AWS Lambda credentials](#generating-your-aws-lambda-credentials) are below.

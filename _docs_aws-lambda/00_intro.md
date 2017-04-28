@@ -11,5 +11,5 @@ If vulnerabilities are found, you will be alerted (via email or Slack) so that y
 In order to turn on the AWS Lambda integration you'll need to:
 
 1. [Connect to AWS Lambda](#connecting-snyk-to-aws-lambda) from the integrations page
-2. [Add your AWS Lambda account credentials](#generating-your-aws-lambda-api-key) to Snyk
-3. [Select the projects you want to monitor](#adding-lambda-functions) and click "Add to Snyk"
+2. [Add your AWS Lambda account credentials](#generating-your-aws-lambda-credentials) to Snyk
+3. [Select the projects you want to monitor](#adding-lambda-functions-to-snyk) and click "Add to Snyk"
